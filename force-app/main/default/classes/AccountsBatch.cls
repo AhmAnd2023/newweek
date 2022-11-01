@@ -1,3 +1,5 @@
+//updating descripton of ALl account.
+//Also getting...
 public class AccountsBatch implements Database.Batchable<SObject> {
     Integer numberOfRecords = 0;
     Integer count  = 0;
@@ -10,7 +12,7 @@ public class AccountsBatch implements Database.Batchable<SObject> {
         return ql;
 
     }
-
+//  update dml happening..
     public void execute(Database.BatchableContext bc, List <Account> scope){
         System.debug('execute method running');
         //dmls
@@ -25,6 +27,8 @@ public class AccountsBatch implements Database.Batchable<SObject> {
         update scope;
 
     }
+
+    //finish method called once..
     public void finish(Database.BatchableContext bc){
         
         System.debug('number of records:' + numberOfRecords);
