@@ -1,0 +1,2 @@
+OpportunityBatch  ob = new OpportunityBatch();
+Id batchid = Database.executeBatch (ob); 
